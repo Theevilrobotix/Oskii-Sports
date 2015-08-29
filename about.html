@@ -1,0 +1,29 @@
+<ons-page ng-controller="AboutController">
+    
+    <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center">About Us</div>
+    </ons-toolbar>
+
+    <section style="padding: 10px;">
+        <div ng-repeat="member in about">
+        <ons-row style="padding: 0 0 10px 0;">
+            <ons-col size="33">
+                <section style="padding: 0 10px 0 0;">
+                <img ng-src="{{member.picture}}" alt="{{member.title}}" ng-click="showDetail($index)"/>
+                </section>
+            </ons-col>
+            <ons-col>
+                <section>
+                <h3 class="title" ng-click="showDetail($index)">{{member.title}}</h3>
+                <div class="subtitle">{{member.subtitle}}</div>
+                <div class="social"><ons-icon icon="envelope" fixed-width="true"></ons-icon>{{member.email}}</div>
+                <div class="social"><ons-icon icon="linkedin" fixed-width="true"></ons-icon>{{member.linkedin}}</div>
+                <div class="social"><ons-icon icon="twitter" fixed-width="true"></ons-icon>{{member.twitter}}</div>
+                </section>
+            </ons-col>
+        </ons-row>
+        </div>
+    </section>
+
+</ons-page>

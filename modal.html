@@ -1,0 +1,23 @@
+<ons-page class="center" ng-controller="ModalController">
+    
+    <ons-toolbar>
+    <div class="left">
+    <ons-toolbar-button onclick="menu.toggleMenu()">
+    <ons-icon icon="bars">
+    </ons-toolbar-button>
+    </div>
+    <div class="center">Modal View</div>
+    </ons-toolbar>
+
+    <section style="padding: 10px;">
+        
+        <ons-modal var="modal">
+            <ons-button ng-click="hide()" style="margin:20px 0 0 0;">Close Modal View</ons-button>
+        </ons-modal>
+
+        <div style="text-align:center;">The following action will open a Modal component that masks the current screen. Underlying components are not noticed from any events while the modal component is shown.<div/>
+        <ons-button modifier="large" ng-click="show()" style="margin:20px 0 0 0;">Open Modal View</ons-button>
+
+    </section>
+
+</ons-page>

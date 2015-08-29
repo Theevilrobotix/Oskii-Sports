@@ -1,0 +1,20 @@
+<ons-page ng-controller="ProductController" sliding-menu-ignore="true">
+    
+    <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center">{{item.title}}</div>
+    </ons-toolbar>
+
+    <ul rn-carousel rn-carousel-indicator>
+    <li ng-repeat="picture in item.pictures"><img ng-src="{{picture}}"/></li>
+    </ul>
+
+    <section style="padding: 10px;">
+    <h2 class="title">{{item.title}}</h2>
+    <p>{{item.body}}</p>
+    <p class="tags"><ons-icon icon="tags" fixed-width="true"></ons-icon>
+    <span ng-repeat="tag in item.tags">{{tag}}{{$last ? '' : ', '}}</span>
+    </p>
+    </section>
+    
+</ons-page>

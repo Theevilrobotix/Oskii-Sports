@@ -1,0 +1,161 @@
+<ons-page class="center" sliding-menu-ignore="true">
+    
+    <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center">Elements</div>
+    </ons-toolbar>
+
+    <section style="padding: 10px;">
+
+        <ons-row style="margin: 10px 0 10px 0">
+            <input type="text" class="text-input" placeholder="Text input" id="subject" style="width:100%; margin-bottom:10px;">
+        </ons-row>
+
+        <ons-row style="margin: 0 0 10px 0">
+            <textarea class="textarea" rows="3" placeholder="Text area" id="message" style="width:100%; margin-bottom:10px;"></textarea>
+        </ons-row>
+
+        <ons-row style="margin: 0 0 20px 0">
+            <ul class="list" style="width:100%; border:none;">
+
+                <li class="list__item">
+                <div class="list-item-left">
+                <i class="fa fa-volume-down lower"></i>
+                </div>
+                <div class="list-item-center">
+                <span class="list__item__line-height">
+                <input type="range" class="range range-center">
+                </span>
+                </div>
+                <div class="list-item-right">
+                <i class="fa fa-volume-up"></i>
+                </div>
+                </li>
+            </ul>
+        </ons-row>
+
+        <ons-row style="margin: 0 0 20px 0">
+
+            <ons-col align="center"> 
+                <label class="checkbox">
+                <input type="checkbox">
+                <div class="checkbox__checkmark"></div>
+                </label>
+            </ons-col>
+
+            <ons-col align="center">
+                <label class="checkbox">
+                <input type="checkbox" checked="checked">
+                <div class="checkbox__checkmark"></div>
+                </label>
+            </ons-col>
+
+            <ons-col align="center">
+                <label class="checkbox">
+                <input type="checkbox" disabled>
+                <div class="checkbox__checkmark"></div>
+                </label>
+            </ons-col>
+
+        </ons-row>
+
+        <ons-row style="margin: 0 0 20px 0">
+
+            <ons-col align="center"> 
+                <label class="switch">
+                <input type="checkbox" class="switch__input">
+                <div class="switch__toggle"></div>
+                </label>
+            </ons-col>
+
+            <ons-col align="center">     
+                <label class="switch">
+                <input type="checkbox" class="switch__input" checked>
+                <div class="switch__toggle"></div>
+                </label>
+            </ons-col>
+
+            <ons-col align="center">
+                <label class="switch">
+                <input type="checkbox" class="switch__input" disabled>
+                <div class="switch__toggle"></div>
+                </label>
+            </ons-col>
+
+        </ons-row>
+
+        <ons-row style="margin: 0 0 20px 0">
+
+            <ons-col align="center"> 
+            <span class="notification">1</span>
+            </ons-col>
+
+            <ons-col align="center">
+            <span class="notification">10</span>
+            </ons-col>
+
+            <ons-col align="center">
+            <span class="notification">999</span>
+            </ons-col>
+
+            <ons-col align="center">
+            <span class="notification">9999</span>
+            </ons-col>
+
+        </ons-row>
+
+        <ons-row style="margin: 0 0 20px 0; display:block;">
+
+            <div class="button-bar" style="width:100%;">
+            <div class="button-bar__item">
+            <input type="radio" name="segment-a" checked>
+            <button class="button-bar__button">One</button>
+            </div>
+            <div class="button-bar__item">
+            <input type="radio" name="segment-a">
+            <button class="button-bar__button">Two</button>
+            </div>
+            <div class="button-bar__item">
+            <input type="radio" name="segment-a">
+            <button class="button-bar__button">Three</button>
+            </div>
+            </div>
+
+        </ons-row>
+        
+        <ons-row style="margin: 0 0 20px 0; display:block;">
+            
+            <ul class="list">
+                <li class="list__item list__item--tappable">
+                <label class="radio-button radio-button--list-item">
+                <input type="radio" name="b" checked="checked">
+                <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+                Radio Button
+                </label>
+                </li>
+                <li class="list__item list__item--tappable">
+                <label class="radio-button radio-button--list-item">
+                <input type="radio" name="b">
+                <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+                Radio Button
+                </label>
+                </li>
+            </ul>
+            
+        </ons-row>
+
+        <div style="clear:both;"></div>
+
+        <div style="margin: 0 0 20px 0">
+            <ons-button modifier="large">Large Simple Button</ons-button>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <div style="margin: 0 0 20px 0">
+            <ons-button modifier="large--cta">Large Call To Action Button</ons-button>
+        </div>
+
+    </section>
+
+</ons-page>

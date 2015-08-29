@@ -1,0 +1,65 @@
+<ons-navigator title="Sensation" var="appNavigator">
+    
+    <ons-page ng-controller="HomeController">
+        
+        <ons-toolbar fixed-style>
+            <div class="left">
+            <ons-toolbar-button onclick="menu.toggleMenu()">
+            <ons-icon icon="bars">
+            </ons-toolbar-button>
+            </div>
+            
+            <div class="center">Sensation</div>
+            
+            <div class="right">
+            <ons-toolbar-button onclick="appNavigator.pushPage('settings.html',{title: 'Settings', animation: 'slide'})">
+            <ons-icon icon="gears">
+            </ons-toolbar-button>
+            </div>
+        </ons-toolbar>
+        
+        <ons-scroller>
+            <section class="home-grid">
+                <div class="grid-menu">
+                    <div class="centering-and-alignment" ng-repeat="row in items | partition:3">
+                      <div class="grid-menu-item list__item list__item--tappable" ng-repeat="item in row" ng-click="showDetail(($parent.$index*row.length)+$index);">
+                        <ons-icon icon="{{item.icon}}"></ons-icon>
+                        <div class="grid-menu-item-label">{{item.title}}</div>
+                      </div>
+                    </div>
+                </div>
+
+                <ons-list class="list-top">
+                    <ons-list-header>Onsen UI Framework</ons-list-header>
+                    <ons-list-item modifier="chevron" ng-click="appNavigator.pushPage('parameters-master.html')">
+                        <ons-row>
+                            <ons-col width="15%"> 
+                            <ons-icon icon="level-up" fixed-width="true"></ons-icon>
+                            </ons-col>
+                            <ons-col class="left">
+                            Parameters
+                            </ons-col>
+                        </ons-row> 
+                    </ons-list-item>
+                </ons-list>
+
+                <ons-list class="list-top">
+                    <ons-list-header>Mobile</ons-list-header>
+                    <ons-list-item modifier="chevron" ng-click="appNavigator.pushPage('plugins.html', {title: 'Plugins', animation: 'slide'})">
+                        <ons-row>
+                            <ons-col width="15%">
+                            <ons-icon icon="mobile" fixed-width="true"></ons-icon>
+                            </ons-col>
+                            <ons-col class="left">
+                            Mobile Plugins
+                            </ons-col>
+                        </ons-row> 
+                    </ons-list-item>
+                </ons-list>
+            </section>
+
+        </ons-scroller>
+        
+    </ons-page>
+
+</ons-navigator>

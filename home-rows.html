@@ -1,0 +1,65 @@
+<ons-navigator title="Sensation" var="appNavigator">
+    
+    <ons-page ng-controller="HomeController">
+        
+        <ons-toolbar>
+            <div class="left">
+            <ons-toolbar-button ng-click="menu.toggleMenu()">
+            <ons-icon icon="bars"></ons-icon>
+            </ons-toolbar-button>
+            </div>
+
+            <div class="center">Sensation</div>
+
+            <div class="right">
+            <ons-toolbar-button ng-click="appNavigator.pushPage('settings.html', {title: 'Settings'})">
+            <ons-icon icon="gears"></ons-icon>
+            </ons-toolbar-button>
+            </div>
+        </ons-toolbar>
+                
+        <ons-list>
+            <ons-list-header>Native</ons-list-header>
+            <ons-list-item modifier="chevron" ng-repeat="item in items" ng-click="showDetail($index)">
+                <ons-row>
+                    <ons-col width="15%"> 
+                    <ons-icon icon="{{item.icon}}" fixed-width="true"></ons-icon>
+                    </ons-col>
+                    <ons-col>
+                    {{item.title}}
+                    </ons-col>
+                </ons-row> 
+            </ons-list-item>
+        </ons-list>
+        
+        <ons-list>
+            <ons-list-header>Onsen UI Framework</ons-list-header>
+            <ons-list-item modifier="chevron" ng-click="appNavigator.pushPage('parameters-master.html')">
+                <ons-row>
+                    <ons-col width="15%"> 
+                    <ons-icon icon="level-up" fixed-width="true"></ons-icon>
+                    </ons-col>
+                    <ons-col class="left">
+                    Parameters
+                    </ons-col>
+                </ons-row> 
+            </ons-list-item>
+        </ons-list>
+        
+        <ons-list>
+            <ons-list-header>Mobile</ons-list-header>
+            <ons-list-item modifier="chevron" ng-click="appNavigator.pushPage('plugins.html', {title: 'Plugins'})">
+                <ons-row>
+                    <ons-col width="15%">
+                    <ons-icon icon="mobile" fixed-width="true"></ons-icon>
+                    </ons-col>
+                    <ons-col class="left">
+                    Mobile Plugins
+                    </ons-col>
+                </ons-row> 
+            </ons-list-item>
+        </ons-list>
+
+    </ons-page>
+    
+</ons-navigator>

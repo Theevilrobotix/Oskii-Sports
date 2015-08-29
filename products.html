@@ -1,0 +1,31 @@
+<ons-page ng-controller="ProductsController" class="products">
+    
+    <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center">Products</div>
+    </ons-toolbar>
+    
+    <ons-pull-hook ng-action="load($done)" var="loader" disabled>
+        <span ng-switch="loader.getCurrentState()">
+        <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a"></ons-icon> Pull down to refresh</span>
+        <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a"></ons-icon> Release to refresh</span>
+        <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-load-d"></ons-icon> Loading data...</span>
+        </span>
+    </ons-pull-hook>
+
+    <section style="padding: 10px;">
+
+        <div class="row" ng-repeat="row in products | partition:2">
+            <ons-col class="views-row" size="50" ng-repeat="product in row">
+                <img ng-src="{{product.thumb}}"alt="{{product.title}}" ng-click="showDetail(($parent.$index*row.length)+$index)"/>
+                <h3 class="title" ng-click="showDetail(($parent.$index*row.length)+$index)">{{product.title}}</h3>
+                <p ng-model="letterLimit">{{product.body | limitTo:letterLimit  }}...</p>
+                <p class="tags"><ons-icon icon="tags" fixed-width="true"></ons-icon>
+                <span ng-repeat="tag in product.tags">{{tag}}{{$last ? '' : ', '}}</span>
+                </p>
+            </ons-col>
+        </div>
+
+    </section>
+    
+</ons-page>

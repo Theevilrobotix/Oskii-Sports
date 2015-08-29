@@ -1,0 +1,71 @@
+{
+	"id": 1,
+	"total": 7,
+	"result": [
+		{
+			"id": 1,
+			"picture": "img/member-1.jpg",
+			"title": "Brandon Wings",
+			"subtitle": "Founder & CEO",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor eu fugiat nulla pariatur.",
+            "email": "lorem.ipsum@lorem.com",
+            "linkedin": "linkedin",
+            "twitter": "@AppsHybrid"
+            
+		}, {
+			"id": 2,
+			"picture": "img/member-2.jpg",
+			"title": "Larry VonDracek",
+			"subtitle": "Content Curation",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor eu fugiat nulla pariatur.",
+            "email": "lorem.ipsum@lorem.com",
+            "linkedin": "linkedin",
+            "twitter": "@AppsHybrid"
+		}, {
+			"id": 3,
+			"picture": "img/member-3.jpg",
+			"title": "Kenny Sims",
+			"subtitle": "Player Development",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor eu fugiat nulla pariatur.",
+            "email": "lorem.ipsum@lorem.com",
+            "linkedin": "linkedin",
+            "twitter": "@AppsHybrid"
+		}, {
+			"id": 4,
+			"picture": "img/member-4.jpg",
+			"title": "Darrell Dancy",
+			"subtitle": "Sales and Marketing",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor eu fugiat nulla pariatur.",
+            "email": "lorem.ipsum@lorem.com",
+            "linkedin": "linkedin",
+            "twitter": "@AppsHybrid"
+		}, {
+			"id": 5,
+			"picture": "img/member-4.jpg",
+			"title": "Mascot Agency",
+			"subtitle": "Website Development",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor eu fugiat nulla pariatur.",
+            "email": "lorem.ipsum@lorem.com",
+            "linkedin": "linkedin",
+            "twitter": "@AppsHybrid"
+		}, {
+			"id": 6,
+			"picture": "img/member-4.jpg",
+			"title": "Scott Stern",
+			"subtitle": "Advisor",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor eu fugiat nulla pariatur.",
+            "email": "lorem.ipsum@lorem.com",
+            "linkedin": "linkedin",
+            "twitter": "@AppsHybrid"
+		}, {
+			"id": 7,
+			"picture": "img/member-4.jpg",
+			"title": "Rob McCarthy",
+			"subtitle": "Advisor",
+			"body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor eu fugiat nulla pariatur.",
+            "email": "lorem.ipsum@lorem.com",
+            "linkedin": "linkedin",
+            "twitter": "@AppsHybrid"
+		}
+	]
+}

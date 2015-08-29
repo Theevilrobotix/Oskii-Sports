@@ -1,0 +1,18 @@
+<ons-page ng-controller="NewController">
+    
+    <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center">{{item.title}}</div>
+    </ons-toolbar>
+kjhl;kjoljk
+    <img ng-src="{{item.picture}}" alt="{{item.title}}"/>
+
+    <section style="padding: 10px;">
+    <h2 class="title">{{item.title}}</h2>
+    <p>{{item.body}}</p>
+    <p class="tags"><ons-icon icon="tags" fixed-width="true"></ons-icon>
+    <span ng-repeat="tag in item.tags">{{tag}}{{$last ? '' : ', '}}</span>    
+    </p>
+    </section>
+    
+</ons-page>

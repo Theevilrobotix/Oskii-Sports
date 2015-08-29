@@ -1,0 +1,18 @@
+<ons-page ng-controller="MemberController">
+    
+    <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center">{{item.title}}</div>
+    </ons-toolbar>
+
+    <section style="padding: 10px;">
+    <h2 class="title">{{item.title}}</h2>
+    <div class="subtitle">{{item.subtitle}}</div>
+    <p>{{item.body}}</p>
+
+    <div class="social"><ons-icon icon="envelope"></ons-icon>{{item.email}}</div>
+    <div class="social"><ons-icon icon="linkedin"></ons-icon>{{item.linkedin}}</div>
+    <div class="social"><ons-icon icon="twitter"></ons-icon>{{item.twitter}}</div>
+    </section>
+
+</ons-page>

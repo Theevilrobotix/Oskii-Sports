@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html ng-app="sensationApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+        
+        <title>Sensation</title>
+
+        <link rel="stylesheet" type="text/css" href="vendors/onsenui/css/onsenui.css"/>
+    
+        <link rel="stylesheet" type="text/css" href="vendors/onsenui/css/onsen-css-components.css"/>
+        
+        <!-- Download also your onsen-css-components.css stylesheet using the integrated CSS Components Theme Roller
+        http://components.onsenui.io -->
+
+        <link rel="stylesheet" type="text/css" href="vendors/onsenui/css/onsen-css-components-blue-theme.css"/>
+        <!--<link rel="stylesheet" type="text/css" href="vendors/onsenui/css/onsen-css-components-default.css"/>-->
+        <!--<link rel="stylesheet" type="text/css" href="vendors/onsenui/css/onsen-css-components-blue-basic-theme.css"/> -->
+        <!--<link rel="stylesheet" type="text/css" href="vendors/onsenui/css/onsen-css-components-dark-theme.css"/> -->
+        <!--<link rel="stylesheet" type="text/css" href="vendors/onsenui/css/onsen-css-components-sunshine-theme.css"/>-->
+        <!--<link rel="stylesheet" type="text/css" href="vendors/onsenui/css/onsen-css-components-purple-theme.css"/>-->
+
+        <link rel="stylesheet" type="text/css" href="css/angular-carousel.css"/>
+        
+        <!-- NVD3 re-usable charting library (based on D3) -->
+        <link rel="stylesheet" type="text/css" href="css/nvd3/nv.d3.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        
+    </head>
+    <body>
+
+        <ons-sliding-menu menu-page="menu.html" type="reveal" main-page="home.html" side="left" max-slide-distance="85%" swipable="true" var="menu">
+        </ons-sliding-menu>
+        
+        <!-- Javascripts -->
+        <script type="text/javascript" src="vendors/onsenui/js/angular/angular.js"></script>    
+        <script type="text/javascript" src="js/angular-touch.js"></script>
+
+        <script type="text/javascript" src="vendors/onsenui/js/onsenui.js"></script>
+        
+        <script type="text/javascript" src="js/angular-carousel.js"></script>
+
+        <script type="text/javascript"src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="js/lodash.underscore.min.js"></script>
+        <script type="text/javascript" src="js/bluebird.js"></script>
+        <script type="text/javascript" src="js/angular-google-maps.min.js"></script>
+        
+        <script type="text/javascript" src="js/event.js"></script>
+        <script type="text/javascript" src="js/ui-map.js"></script>
+        <script type="text/javascript" src="js/angular-local-storage.js"></script>
+        <script type="text/javascript" src="js/angular-sanitize.js"></script>
+        
+        <!-- NVD3 re-usable charting library (based on D3) -->
+        <script type="text/javascript" src="js/nvd3/d3.min.js"></script>
+        <script type="text/javascript" src="js/nvd3/nv.d3.min.js"></script>
+        <script type="text/javascript" src="js/nvd3/angular-nvd3.min.js"></script>
+        
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/app-local-storage.js"></script>
+        
+        <script src="js/jquery-1.11.1.min.js"></script>
+        
+        <script type="text/javascript" src="js/pushwoosh-android.js"></script>
+        <script type="text/javascript" src="js/pushwoosh-ios.js"></script>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <script type="text/javascript">
+        app.initialize();
+        </script>
+        
+    </body>
+</html>

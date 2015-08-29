@@ -1,0 +1,18 @@
+<ons-page ng-controller="GalleryController" sliding-menu-ignore="true" class="gallery-page">
+
+    <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center">Gallery</div>
+    </ons-toolbar>
+        
+    <ul rn-carousel rn-carousel-indicator>
+        <li ng-repeat="slide in slides">
+        <img ng-src="{{slide.picture}}"/>
+        <div class="content">
+        <div><ons-icon icon="info" fixed-width="true"></ons-icon>{{slide.label}} ({{slide.item}}/{{slides.length}})</div>
+        <div><ons-icon icon="map-marker" fixed-width="true"></ons-icon>{{slide.location}}</div>
+        </div>
+        </li>
+    </ul>
+    
+</ons-page>

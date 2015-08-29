@@ -1,0 +1,35 @@
+<ons-page ng-controller="CategoriesController">
+
+    <ons-toolbar>
+    <div class="left"><ons-back-button>Back</ons-back-button></div>
+    <div class="center">WP Categories</div>
+    </ons-toolbar>
+
+    <ons-list>
+        <ons-list-header>Categories</ons-list-header>
+        <ons-list-item modifier="chevron" ng-repeat="category in categories | limitTo: paginationLimit()" ng-click="showDetail($index)">
+            <ons-row>
+                <ons-col>
+                {{category.title}} ({{category.post_count}})
+                </ons-col>
+            </ons-row> 
+        </ons-list-item>
+    </ons-list>
+    
+    <section style="padding: 10px;">
+        
+        <ons-row align="center" style="padding: 0 0 10px 0;">
+            <ons-col>
+            <span class="loading"><i class="fa fa-spin fa-circle-o-notch"></i> Loading</span>
+            <span ng-bind="msg"></span>
+            </ons-col>
+        </ons-row>
+        
+        <ons-row align="center">
+            <ons-col>
+            <ons-button ng-show="hasMoreItems()" ng-click="showMoreItems()" class="post-show-more"><i class="fa fa-angle-double-down more-icon"></i>Show more</ons-button>
+            </ons-col>
+        </ons-row>
+    </section>
+
+</ons-page>
